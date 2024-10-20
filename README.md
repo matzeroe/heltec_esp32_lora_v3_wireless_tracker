@@ -1,4 +1,4 @@
-# Heltec ESP32 LoRa v3
+# Heltec ESP32 LoRa v3 with added Wireless Tracker
 
 ### The unofficial library
 
