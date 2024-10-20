@@ -5,15 +5,15 @@
 #include "soc/soc_caps.h"
 
 #define WIFI_LoRa_32_V3 true
-#define DISPLAY_HEIGHT 32	// check
-#define DISPLAY_WIDTH  64	// check
+#define DISPLAY_HEIGHT 32
+#define DISPLAY_WIDTH  64
 
 #define USB_VID 0x303a
 #define USB_PID 0x1001
 
-#define EXTERNAL_NUM_INTERRUPTS 46	// check
-#define NUM_DIGITAL_PINS        48	// check
-#define NUM_ANALOG_INPUTS       20	// check
+#define EXTERNAL_NUM_INTERRUPTS 46
+#define NUM_DIGITAL_PINS        48
+#define NUM_ANALOG_INPUTS       20
 
 // Some boards have too low voltage on this pin (board design bug)
 // Use different pin with 3V and connect with 48
@@ -24,9 +24,9 @@ static const uint8_t LED_BUILTIN = SOC_GPIO_PIN_COUNT+48;
 #define RGB_BUILTIN LED_BUILTIN
 #define RGB_BRIGHTNESS 64
 
-#define analogInputToDigitalPin(p)  (((p)<20)?(analogChannelToDigitalPin(p)):-1)  // check
-#define digitalPinToInterrupt(p)    (((p)<49)?(p):-1)			// check
-#define digitalPinHasPWM(p)         (p < 46)					// check
+#define analogInputToDigitalPin(p)  (((p)<20)?(analogChannelToDigitalPin(p)):-1)
+#define digitalPinToInterrupt(p)    (((p)<49)?(p):-1)
+#define digitalPinHasPWM(p)         (p < 46)
 
 static const uint8_t TX = 43;
 static const uint8_t RX = 44;
@@ -75,11 +75,11 @@ static const uint8_t T12 = 12;
 static const uint8_t T13 = 13;
 static const uint8_t T14 = 14;
 
-static const uint8_t Vext = 3;
-static const uint8_t LED  = 18;
-static const uint8_t RST_OLED = 39;
-static const uint8_t SCL_OLED = 41;
-static const uint8_t SDA_OLED = 42;
+static const uint8_t Vext = 36;
+static const uint8_t LED  = 35;
+static const uint8_t RST_OLED = 21;
+static const uint8_t SCL_OLED = 18;
+static const uint8_t SDA_OLED = 17;
 
 static const uint8_t RST_LoRa = 12;
 static const uint8_t BUSY_LoRa = 13;
